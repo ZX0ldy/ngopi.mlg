@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('user/ngopi');
+})->name('ngopi');
 
 //user
 Route::get('/about', function () {
@@ -14,10 +14,6 @@ Route::get('/about', function () {
 Route::get('/profile', function () {
     return view('user/profile');
 })->name('profile');
-
-Route::get('/ngopi', function () {
-    return view('user/ngopi');
-})->name('ngopi');
 
 Route::get('/sumbit', function () {
     return view('user/submit');
